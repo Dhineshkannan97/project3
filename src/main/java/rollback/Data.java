@@ -14,4 +14,7 @@ public class Data {
         this.address = address;
     }
 
+    public Data() {
+
+    }
 }

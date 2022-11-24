@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class ScannerUserInput {
-    Update update = new Update();
+//    Update update = new Update();
     Insert in = new Insert();
     Data data = new Data();
 

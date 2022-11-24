@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ScannerUserInput {
     Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/test", "postgres", "123456");
-    //    ArrayList<Data> values = new ArrayList<>();
+
     static ScannerUserInput input;
 
     static {
@@ -16,7 +16,7 @@ public class ScannerUserInput {
         }
     }
 
-    static Data obj = new Data();
+    static Data data = new Data();
     Statement stmt = conn.createStatement();
 
     public ScannerUserInput() throws SQLException {
@@ -36,13 +36,11 @@ public class ScannerUserInput {
             String address = scan.next();
             System.out.println("enter your salary");
             double salary = scan.nextDouble();
-//            values.add(new Data(name, age, salary, address));
-//            obj(name, age, salary, address);
-            obj.name = name;
-            obj.age = age;
-            obj.salary = salary;
-            obj.address = address;
-            obj.id = id;
+            data.name = name;
+            data.age = age;
+            data.salary = salary;
+            data.address = address;
+            data.id = id;
             input.addValues();
             System.out.println("Do you wish to continue (true/false)");
             flag = scan.nextBoolean();
@@ -51,17 +49,12 @@ public class ScannerUserInput {
     }
 
     public void addValues() throws SQLException {
-//        for (Data data : values) {
         conn.setAutoCommit(false);
         stmt.executeQuery("SELECT * FROM yahoo;");
-        String sql = "update yahoo set name='" + obj.name + "',age=" + obj.age + " where id=" + obj.id + ";";
-//            String sql = "UPDATE yahoo (ID,NAME,AGE,ADDRESS,SALARY) "
-//                    + "VALUES (" + data.id + ", '" + data.name + "'," + data.age + ", '" + data.address + "'," +data.salary + " );";
+        String sql = "update yahoo set name='" + data.name + "',age=" + data.age + " where id=" + data.id + ";";
         PreparedStatement p = conn.prepareStatement(sql);
         p.execute();
-//            stmt.executeUpdate(sql1);
         conn.commit();
-//        }
         conn.rollback();
     }
 

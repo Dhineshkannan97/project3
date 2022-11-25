@@ -1,9 +1,8 @@
 package rollback;
 
 public class Data {
-    public int id ;
-    public String name ;
-    public int age ;
+    public String name;
+    public int age;
     public double salary;
     public String address;
 
@@ -13,8 +12,4 @@ public class Data {
         this.salary = salary;
         this.address = address;
     }
-
-    public Data() {
-    }
-
 }

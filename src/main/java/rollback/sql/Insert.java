@@ -1,4 +1,6 @@
-package rollback;
+package rollback.sql;
+
+import rollback.data.Data;
 
 import java.sql.*;
 import java.util.List;

@@ -1,13 +1,10 @@
 package rollback;
-
 import org.junit.jupiter.api.Test;
+import rollback.data.Data;
 
 import java.sql.*;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 class InsertTest {
-
     @Test
     void testTable() throws SQLException {
         Data data = new Data("bharathi", 22, 3.627623e+06, "sivagangai");

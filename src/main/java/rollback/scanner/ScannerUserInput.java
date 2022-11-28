@@ -1,11 +1,19 @@
-package rollback;
+package rollback.scanner;
+
+import rollback.data.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ScannerUserInput {
-    List<Data> data= new ArrayList<>();
-    public  List<Data> getValues(){
+
+
+    public ScannerUserInput() {
+    }
+
+    public List<Data> getValues() {
+        List<Data> data = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
@@ -17,7 +25,7 @@ public class ScannerUserInput {
             String address = scan.next();
             System.out.println("enter your salary");
             double salary = scan.nextDouble();
-            data.add(new Data( name, age, salary,address));
+            data.add(new Data(name, age, salary, address));
             System.out.println("Do you wish to continue (true/false)");
             flag = scan.nextBoolean();
         }

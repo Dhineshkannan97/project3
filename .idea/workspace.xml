@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24c72fd2-f33d-4e46-976d-c521c9c07503" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rollback/CreatingPropertiesFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rollback.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rollback/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/ScannerUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/ScannerUserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rollback/InsertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rollback/InsertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rollback/ScannerUserInputTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/propertiesfile/CreatingPropertiesFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/scanner/ScannerUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/scanner/ScannerUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/sql/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/sql/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rollback.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
       <module name="project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rollback.*" />
+          <option name="PATTERN" value="rollback.scanner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,7 +78,7 @@
       <module name="project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rollback.*" />
+          <option name="PATTERN" value="rollback.scanner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,27 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertTest.testTable (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rollback.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rollback" />
-      <option name="MAIN_CLASS_NAME" value="rollback.InsertTest" />
-      <option name="METHOD_NAME" value="testTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InsertTest.testTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rollback.*" />
+          <option name="PATTERN" value="rollback.scanner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +106,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InsertTest.testTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rollback.scanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rollback" />
+      <option name="MAIN_CLASS_NAME" value="rollback.InsertTest" />
+      <option name="METHOD_NAME" value="testTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScannerUserInputTest.testScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rollback.*" />
+          <option name="PATTERN" value="rollback.scanner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,7 +142,6 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ScannerUserInputTest.testScan" />
-        <item itemvalue="JUnit.InsertTest.testTable (1)" />
         <item itemvalue="JUnit.InsertTest.testTable" />
         <item itemvalue="JUnit.InsertTest.testAdd" />
       </list>

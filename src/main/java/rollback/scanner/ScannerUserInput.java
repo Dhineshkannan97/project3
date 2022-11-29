@@ -1,7 +1,5 @@
 package rollback.scanner;
-
 import rollback.data.Data;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

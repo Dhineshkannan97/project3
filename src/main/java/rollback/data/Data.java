@@ -13,11 +13,4 @@ public class Data {
         this.salary = salary;
         this.address = address;
     }
-    public Data(int id,String name, int age, double salary, String address) {
-        this.id= id;
-        this.name = name;
-        this.age = age;
-        this.salary = salary;
-        this.address = address;
-    }
 }

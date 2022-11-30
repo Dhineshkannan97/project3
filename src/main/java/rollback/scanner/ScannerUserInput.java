@@ -1,15 +1,14 @@
 package rollback.scanner;
 import rollback.data.Data;
+import rollback.depandancyinjection.InseretDataService;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ScannerUserInput {
-
-
     public ScannerUserInput() {
     }
-
     public List<Data> getValues() {
         List<Data> data = new ArrayList<>();
         Scanner scan = new Scanner(System.in);

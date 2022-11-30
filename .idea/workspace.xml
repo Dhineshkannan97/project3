@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24c72fd2-f33d-4e46-976d-c521c9c07503" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rollback/depandancyinjection/InseretDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rollback/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/propertiesfile/CreatingPropertiesFile.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rollback/scanner/ScannerUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/scanner/ScannerUserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/sql/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/sql/Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rollback.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/sql/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/sql/InsertServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rollback/InsertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rollback/InsertServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertServiceImplTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project3" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +81,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="rollback" />
-      <option name="MAIN_CLASS_NAME" value="rollback.InsertTest" />
+      <option name="MAIN_CLASS_NAME" value="rollback.InsertServiceImplTest" />
       <option name="METHOD_NAME" value="testAdd(java.util.List)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertTest.testTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertServiceImplTest.testTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project3" />
       <extension name="coverage">
         <pattern>
@@ -99,7 +97,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="rollback" />
-      <option name="MAIN_CLASS_NAME" value="rollback.InsertTest" />
+      <option name="MAIN_CLASS_NAME" value="rollback.InsertServiceImplTest" />
       <option name="METHOD_NAME" value="testTable(java.util.List)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -142,8 +140,8 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ScannerUserInputTest.testScan" />
-        <item itemvalue="JUnit.InsertTest.testTable" />
-        <item itemvalue="JUnit.InsertTest.testAdd" />
+        <item itemvalue="JUnit.InsertServiceImplTest.testTable" />
+        <item itemvalue="JUnit.InsertServiceImplTest.testAdd" />
       </list>
     </recent_temporary>
   </component>

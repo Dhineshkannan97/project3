@@ -1,6 +1,7 @@
 package rollback.sql;
 
 import rollback.data.Data;
+import rollback.depandancyinjection.InseretDataService;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,8 +11,9 @@ import java.sql.*;
 import java.util.List;
 import java.util.Properties;
 
-public class Insert {
-    public void insertData(List<Data> data) throws SQLException {
+public class InsertServiceImpl implements InseretDataService {
+    @Override
+    public void insertData(List<Data> data) {
         try (InputStream input = new FileInputStream("C:\\Users\\Dhinesh Kannan\\Documents\\Streams\\project3\\src\\main\\resources\\db.properties")) {
             Properties prop = new Properties();
             prop.load(input);
@@ -36,7 +38,7 @@ public class Insert {
                 }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException ex) {
+        } catch (IOException | SQLException ex) {
             ex.printStackTrace();
         }
     }

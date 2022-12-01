@@ -1,10 +1,8 @@
-package rollback.sql;
+package rollback.service.implement;
 
 import rollback.data.Data;
-import rollback.depandancyinjection.InseretDataService;
-
+import rollback.service.InseretDataService;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
@@ -36,10 +34,8 @@ public class InsertServiceImpl implements InseretDataService {
                     stmt.close();
                     conn.close();
                 }
-        } catch (FileNotFoundException e) {
+        } catch (IOException | SQLException e) {
             e.printStackTrace();
-        } catch (IOException | SQLException ex) {
-            ex.printStackTrace();
         }
     }
 }

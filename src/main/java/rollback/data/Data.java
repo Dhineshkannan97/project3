@@ -1,7 +1,6 @@
 package rollback.data;
 
 public class Data {
-    public int id;
     public String name;
     public int age;
     public double salary;

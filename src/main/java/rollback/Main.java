@@ -1,28 +1,15 @@
 package rollback;
 
-import rollback.data.Data;
-import rollback.depandancyinjection.InseretDataService;
-import rollback.scanner.ScannerUserInput;
-import rollback.sql.InsertServiceImpl;
-
-import java.util.List;
+import rollback.service.DataInputService;
+import rollback.service.InseretDataService;
+import rollback.service.implement.DataInputServiceImpl;
+import rollback.service.implement.InsertServiceImpl;
 
 public class Main {
-
-    private static InseretDataService in;
-    public Main(InseretDataService in) {
-      this.in = in;
-    }
-
-    public void test(List<Data> data){
-        in.insertData(data);
-    }
-
     public static void main(String[] args) {
-        ScannerUserInput input = new ScannerUserInput();
-        List<Data> values = input.getValues();
-//        InseretDataService in = new InsertServiceImpl();
-        in.insertData(values);
-
+        DataInputService service1 = new DataInputServiceImpl();
+        InseretDataService in = new InsertServiceImpl();
+        DataPersister data = new DataPersister(in, service1);
+        data.saveData();
     }
 }

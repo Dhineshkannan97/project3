@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         DataInputService service1 = new DataInputServiceImpl();
         InseretDataService in = new InsertServiceImpl();
-        DataPersister data = new DataPersister(in, service1);
+        DataPersist data = new DataPersist(in, service1);
         data.saveData();
     }
 }

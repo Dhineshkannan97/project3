@@ -1,5 +1,4 @@
 package rollback.service.implement;
-
 import rollback.data.Data;
 import rollback.service.InseretDataService;
 import java.io.FileInputStream;
@@ -8,11 +7,10 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.List;
 import java.util.Properties;
-
 public class InsertServiceImpl implements InseretDataService {
     @Override
     public void insertData(List<Data> data) {
-        try (InputStream input = new FileInputStream("C:\\Users\\Dhinesh Kannan\\Documents\\Streams\\project3\\src\\main\\resources\\db.properties")) {
+        try (InputStream input = new FileInputStream("..\\project3\\src\\main\\resources\\db.properties")) {
             Properties prop = new Properties();
             prop.load(input);
             Connection conn = DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("user"), prop.getProperty("password"));

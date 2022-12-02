@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24c72fd2-f33d-4e46-976d-c521c9c07503" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rollback/DataPersister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rollback/service/DataInputService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/DataPersister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/DataPersist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rollback/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/depandancyinjection/InseretDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/service/InseretDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/scanner/ScannerUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/service/implement/DataInputServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/sql/InsertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/service/implement/InsertServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/service/implement/DataInputServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/service/implement/DataInputServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rollback/service/implement/InsertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rollback/service/implement/InsertServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +61,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="DataPersister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rollback.DataPersister" />
+    <configuration name="DataPersist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rollback.DataPersist" />
       <module name="project3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rollback.*" />
+          <option name="PATTERN" value="rollback.DataPersist" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,7 +138,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DataPersister" />
         <item itemvalue="JUnit.ScannerUserInputTest.testScan" />
         <item itemvalue="JUnit.InsertServiceImplTest.testTable" />
         <item itemvalue="JUnit.InsertServiceImplTest.testAdd" />

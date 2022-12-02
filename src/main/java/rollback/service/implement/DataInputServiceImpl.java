@@ -1,11 +1,9 @@
 package rollback.service.implement;
 import rollback.data.Data;
 import rollback.service.DataInputService;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class DataInputServiceImpl implements DataInputService {
     public DataInputServiceImpl() {
     }
